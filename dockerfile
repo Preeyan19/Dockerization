@@ -14,4 +14,4 @@ COPY . .
 EXPOSE 3000
 
 # Start Nginx in the foreground
-CMD ["nginx", "-g", "daemon off;"]
+CMD [ "node", "app.js" ]
