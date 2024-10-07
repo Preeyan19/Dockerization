@@ -1,0 +1,290 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Navigation */
+nav {
+  background-color: #000;
+  color: white;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ff4757, #1e90ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #ff4757;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  border-bottom: 3px solid #e0e0e0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero .cta-btn {
+  background-color: #ff4757;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero .cta-btn:hover {
+  background-color: #ff6b81;
+}
+
+/* Carousel */
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+/* About Section */
+.about-section {
+  background-color: black; /* Changed background to black */
+  color: white; /* Text color for contrast */
+  padding: 40px;
+  text-align: center;
+  border-bottom: 3px solid #e0e0e0;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Make the title more appealing */
+  letter-spacing: 2px; /* Add some spacing */
+}
+
+.about-section p {
+  font-size: 18px;
+}
+
+/* Events Section */
+.events-section {
+  background-color: black; /* Black background */
+  color: white; /* Text color set to white for contrast */
+  padding: 40px;
+  text-align: center;
+  border-bottom: 3px solid #e0e0e0;
+}
+
+.events-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Make the title more appealing */
+  letter-spacing: 2px; /* Add some spacing */
+}
+
+.event-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.event-item {
+  background-color: #333; /* Dark background for event items to match the black theme */
+  color: white; /* White text for contrast */
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: left;
+  border: 1px solid #555; /* Slightly darker border */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.event-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.event-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.event-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.event-item .btn {
+  background-color: #ff4757;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.event-item .btn:hover {
+  background-color: #ff6b81;
+}
+
+/* Hover effects for event items */
+.event-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.1); /* Lighter shadow */
+}
+
+/* Contact and Feedback Sections */
+.contact-section,
+.feedback-section {
+  background-color: black; /* Added black background */
+  color: white; /* Text color for contrast */
+  padding: 40px;
+  text-align: center;
+  border-bottom: 3px solid #e0e0e0; /* Added border for consistency */
+}
+
+.contact-section h2,
+.feedback-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Make the title more appealing */
+  letter-spacing: 2px; /* Add some spacing */
+}
+
+.contact-section p,
+.feedback-section p {
+  font-size: 18px;
+  margin-bottom: 20px; /* Added margin to separate text from buttons */
+}
+
+/* Common styles for buttons */
+.btn,
+.feedback-btn {
+  background-color: #ff4757; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Transition for hover effect */
+  margin-top: 20px; /* Add margin to create space above the button */
+}
+
+.btn:hover,
+.feedback-btn:hover {
+  background-color: #ff6b81; /* Button hover color */
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Registration Form Styles */
+.registration-form {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #000000;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #ff4757;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff6b81;
+}

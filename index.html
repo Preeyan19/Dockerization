@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR/VR Event Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main Navigation -->
+    <nav>
+      <div class="logo">
+        <h1>AR/VR Event Hub</h1>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Welcome to the Future of Experiences</h1>
+        <p>
+          Explore the world of Augmented and Virtual Reality with upcoming
+          global events.
+        </p>
+        <a href="#events" class="cta-btn">Discover Events</a>
+      </div>
+
+      <!-- Carousel for Images -->
+      <div class="carousel">
+        <img
+          src="slide1.jpg"
+          class="carousel-image active"
+          alt="AR/VR Slide 1"
+        />
+        <img src="slide2.jpg" class="carousel-image" alt="AR/VR Slide 2" />
+        <img src="slide3.jpg" class="carousel-image" alt="AR/VR Slide 3" />
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Our Platform</h2>
+      <p>
+        AR/VR Event Hub brings you the best of technology-driven events from
+        across the globe. From live concerts to educational sessions, you can
+        explore and experience everything right from your home.
+      </p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+      <h2>Upcoming Events</h2>
+      <div class="event-container">
+        <div class="event-item">
+          <img src="space.jpg" alt="AR Space Exploration" />
+          <h3>AR Space Exploration</h3>
+          <p>
+            Experience the wonders of the universe with our interactive AR tour
+            of space.<br />Date: 19th July 2024
+          </p>
+          <a
+            href="#"
+            class="btn"
+            onclick="toggleForm('spaceForm'); return false;"
+            >Join Now</a
+          >
+          <div id="spaceForm" class="registration-form" style="display: none">
+            <h4>Register for AR Space Exploration</h4>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <input type="submit" value="Register" />
+            </form>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <img src="art-gallery.jpg" alt="Virtual Art Gallery" />
+          <h3>Virtual Art Gallery</h3>
+          <p>
+            Explore famous artworks in a virtual gallery setting from renowned
+            artists.<br />
+            Date: 30th September 2024
+          </p>
+          <a href="#" class="btn" onclick="toggleForm('artForm'); return false;"
+            >Join Now</a
+          >
+          <div id="artForm" class="registration-form" style="display: none">
+            <h4>Register for Virtual Art Gallery</h4>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <input type="submit" value="Register" />
+            </form>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <img src="fitness-challenge.jpg" alt="VR Fitness Challenge" />
+          <h3>VR Fitness Challenge</h3>
+          <p>
+            Join a virtual fitness challenge where you can compete with others
+            in a virtual space.<br />24th December 2024
+          </p>
+          <a
+            href="#"
+            class="btn"
+            onclick="toggleForm('fitnessForm'); return false;"
+            >Join Now</a
+          >
+          <div id="fitnessForm" class="registration-form" style="display: none">
+            <h4>Register for VR Fitness Challenge</h4>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <input type="submit" value="Register" />
+            </form>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <img src="concert.jpg" alt="AR Music Concert" />
+          <h3>AR Music Concert</h3>
+          <p>
+            Enjoy live music with AR-enhanced experiences, bringing you closer
+            to the performance.<br />
+            Date: 28th December 2024
+          </p>
+          <a
+            href="#"
+            class="btn"
+            onclick="toggleForm('concertForm'); return false;"
+            >Join Now</a
+          >
+          <div id="concertForm" class="registration-form" style="display: none">
+            <h4>Register for AR Music Concert</h4>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <input type="submit" value="Register" />
+            </form>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <img src="cooking.jpg" alt="VR Cooking Class" />
+          <h3>VR Cooking Class</h3>
+          <p>
+            Learn to cook with world-renowned chefs in a fully immersive virtual
+            kitchen. <br />
+            Date: 21th August 2025
+          </p>
+          <a
+            href="#"
+            class="btn"
+            onclick="toggleForm('cookingForm'); return false;"
+            >Join Now</a
+          >
+          <div id="cookingForm" class="registration-form" style="display: none">
+            <h4>Register for VR Cooking Class</h4>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <input type="submit" value="Register" />
+            </form>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <img src="wildlife.jpg" alt="AR Wildlife Safari" />
+          <h3>AR Wildlife Safari</h3>
+          <p>
+            Explore the wild with an interactive AR experience, discovering
+            animals in their habitat.<br />
+            Date: 31st December 2024
+          </p>
+          <a
+            href="#"
+            class="btn"
+            onclick="toggleForm('wildlifeForm'); return false;"
+            >Join Now</a
+          >
+          <div
+            id="wildlifeForm"
+            class="registration-form"
+            style="display: none"
+          >
+            <h4>Register for AR Wildlife Safari</h4>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <input type="submit" value="Register" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions about upcoming events? Feel free to reach out to us for
+        any information.
+      </p>
+      <a href="mailto:support@arvrevents.com" class="btn">Email Us</a>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback-section">
+      <h2>We Value Your Feedback</h2>
+      <p>Your thoughts matter! Please share your feedback.</p>
+      <a href="#" class="btn feedback-btn">Leave Feedback</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 AR/VR Event Hub. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Toggle Functionality -->
+    <script>
+      function toggleForm(formId) {
+        const form = document.getElementById(formId);
+        form.style.display = form.style.display === "none" ? "block" : "none";
+      }
+
+      const images = document.querySelectorAll(".carousel-image");
+      let currentImage = 0;
+
+      function changeImage() {
+        images[currentImage].classList.remove("active");
+        currentImage = (currentImage + 1) % images.length;
+        images[currentImage].classList.add("active");
+      }
+
+      setInterval(changeImage, 3000); // Change image every 3 seconds
+    </script>
+  </body>
+</html>
