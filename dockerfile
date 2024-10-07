@@ -11,7 +11,7 @@ RUN rm -rf ./*
 COPY . .
 
 # Expose port 80 to serve the application
-EXPOSE 80
+EXPOSE 5500
 
 # Start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
