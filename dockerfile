@@ -10,7 +10,7 @@ RUN rm -rf ./*
 # Copy the HTML files and any other assets (CSS, JS, images) to the container
 COPY . .
 
-# Expose port 80 to serve the application
+# Expose port 3000 to serve the application
 EXPOSE 3000
 
 # Start Nginx in the foreground
